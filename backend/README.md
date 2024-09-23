@@ -1,4 +1,4 @@
-# Go Echo API Server for openapi
+# Go Echo API Server for todo
 
 A simple application to handle tasks.
 
@@ -13,7 +13,7 @@ To see how to make this your own, look here:
 [README](https://openapi-generator.tech)
 
 - API version: 1.0.0
-- Build date: 2024-09-23T07:04:24.288672546Z[Etc/UTC]
+- Build date: 2024-09-23T07:42:23.312500213Z[Etc/UTC]
 - Generator version: 7.9.0-SNAPSHOT
 
 ### Running the server
@@ -27,12 +27,12 @@ go build -o app
 
 To run the server in a docker container
 ```
-docker build --network=host -t openapi .
+docker build --network=host -t todo .
 ```
 
 Once the image is built, just run
 ```
-docker run --rm -it openapi
+docker run --rm -it todo
 ```
 
 ### Known Issue

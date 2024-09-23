@@ -3,9 +3,9 @@ RUN apk add --no-cache git gcc
 RUN mkdir /app
 WORKDIR /app
 COPY . .
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o openapi
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o todo
 FROM alpine:3.13
-COPY --from=build-env /app/openapi .
+COPY --from=build-env /app/todo .
 EXPOSE 8080/tcp
 USER 1001
-ENTRYPOINT ["./openapi"]
+ENTRYPOINT ["./todo"]

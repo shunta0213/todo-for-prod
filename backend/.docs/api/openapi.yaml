@@ -12,18 +12,6 @@ tags:
 - description: Task management
   name: task
 paths:
-  /user:
-    get:
-      operationId: getUser
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                items:
-                  $ref: '#/components/schemas/User'
-                type: array
-          description: sucess
   /task:
     get:
       operationId: tasksGetAll
@@ -156,17 +144,6 @@ paths:
       - task
 components:
   schemas:
-    User:
-      description: User
-      example:
-        name: name
-        id: id
-      properties:
-        id:
-          readOnly: true
-          type: string
-        name:
-          type: string
     Task:
       description: Object representing a Task
       example:

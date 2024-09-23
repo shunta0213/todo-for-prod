@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/GIT_USER_ID/GIT_REPO_ID/handlers"
+	"todo/handlers"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 )
@@ -16,9 +16,6 @@ func main() {
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
 
-
-	// GetUser - 
-	e.GET("/todoapp/user", c.GetUser)
 
 	// TasksCreate - Create a new task
 	e.POST("/todoapp/task", c.TasksCreate)
