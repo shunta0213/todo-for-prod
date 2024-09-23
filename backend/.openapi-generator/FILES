@@ -1,0 +1,12 @@
+.docs/api/openapi.yaml
+Dockerfile
+README.md
+go.mod
+handlers/api_default.go
+handlers/api_task.go
+handlers/container.go
+main.go
+models/hello-world.go
+models/model_error.go
+models/model_task.go
+models/model_user.go
