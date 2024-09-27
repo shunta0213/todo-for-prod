@@ -1,7 +1,0 @@
-.docs/api/openapi.yaml
-README.md
-handlers/api_task.go
-handlers/container.go
-models/hello-world.go
-models/model_error.go
-models/model_task.go

@@ -82,7 +82,7 @@ paths:
       tags:
       - task
     get:
-      operationId: tasksRead
+      operationId: taskGet
       parameters:
       - description: The id of the task
         example: e1cb23d0-6cbe-4a29-b586-bfa424bc93fd

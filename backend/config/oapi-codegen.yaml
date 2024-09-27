@@ -1,0 +1,7 @@
+package: controller
+output: ./backend/internal/controller/handler_gen.go
+generate:
+  echo-server: true
+  models: true
+output-options:
+  skip-prune: true
